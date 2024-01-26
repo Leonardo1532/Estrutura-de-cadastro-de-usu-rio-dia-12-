@@ -28,10 +28,27 @@ while (fluxo) {
 
     switch (opcao) {
         case 1:
-            
+            nomes[index] = prompt("Insira o nome de usuário")
+            senhas[index] = (prompt("Insira uma senha"))
+            index++
+            console.log("Usuário cadastrado")
             break;
         case 2:
-            
+            let nome = prompt("Insira seu nome de usuário")
+            let senha = (prompt("Insira sua senha"))
+            let comparador = false
+
+            for (let index = 0; index < nomes.length; index++) {
+                if (nome === nomes[index] && senha === senhas[index]) {
+                    comparador = true
+                }
+            }
+
+            if (comparador) {
+                alert("Usuário logado com sucesso")
+            } else {
+                alert("Nome de usuário ou senha inválida")
+            }
 
             break;
         case 3:
