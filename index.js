@@ -71,9 +71,12 @@ while (fluxo) {
 
             break;
         case 4:
-            
+            console.log("Programa encerrado")
+            fluxo = false
+            break;
 
         default:
+            alert("Opção inválida")
             break;
     }
 }
