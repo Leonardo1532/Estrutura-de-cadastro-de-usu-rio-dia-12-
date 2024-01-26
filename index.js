@@ -52,7 +52,22 @@ while (fluxo) {
 
             break;
         case 3:
-            
+            let nomesSup = []
+            let senhasSup = []
+            let indexSup = 0
+            let nomeExcluir = prompt("Insira o nome que deseja excluir")
+
+            for (let index = 0; index < nomes.length; index++) {
+                if (nomeExcluir === nomes[index]) {
+                    alert("Usuário excluido com sucesso")
+                } else {
+                    nomesSup[indexSup] = nomes[index]
+                    senhasSup[indexSup] = senhas[index]
+                    indexSup++
+                }
+            }
+            nomes = nomesSup
+            senhas = senhasSup
 
             break;
         case 4:
